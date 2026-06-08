@@ -1,38 +1,20 @@
 package com.example;
 
-/**
- * Todo Model
- * 
- * Açıklama: Task bilgilerini tutuyoruz
- * JSON'dan Java'ya ve Java'dan JSON'a dönüştürülür
- * 
- * Örnek JSON:
- * {
- *   "userId": 1,
- *   "id": 1,
- *   "title": "Evimi temizle",
- *   "completed": false
- * }
- */
 public class Todo {
     
     private int id;
     private int userId;
     private String title;
     private boolean completed;
-    
-    // Boş constructor (JSON'dan Java'ya dönüştürme için)
     public Todo() {
     }
     
-    // Constructor
     public Todo(int userId, String title, boolean completed) {
         this.userId = userId;
         this.title = title;
         this.completed = completed;
     }
     
-    // Getter ve Setter'lar
     public int getId() {
         return id;
     }
